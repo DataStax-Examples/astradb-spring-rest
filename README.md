@@ -2,7 +2,7 @@
 # AstraDB Spring REST
 *30 minutes, Beginner, [Start Building](https://github.com/DataStax-Examples/astradb-spring-rest#prerequisites)*
 
-Create a React.js, Gatsby application that reads data from [DataStax Astra](https://astra.datastax.com/register?utm_source=devplay&utm_medium=github&utm_campaign=astradb-spring-rest) using GraphQL.
+Create a Spring application that reads data from [DataStax Astra](https://astra.datastax.com/register?utm_source=devplay&utm_medium=github&utm_campaign=astradb-spring-rest) using a REST API.
 <!--- ENDEXCLUDE --->
 
 ![image](https://raw.githubusercontent.com/DataStax-Examples/sample-app-template/master/screenshots/astra-sample-app-default.png)

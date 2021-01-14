@@ -43,6 +43,9 @@ function setupTable() {
     --header 'content-type: application/json' \
     --data '{"username":"'"${ASTRA_DB_USERNAME}"'","password":"'"${ASTRA_DB_PASSWORD}"'"}' | jq -r '.authToken')
 
+  export AUTH_TOKEN="${AUTH_TOKEN}"
+  gp env AUTH_TOKEN="${AUTH_TOKEN}" &>/dev/null
+
   # Create tables
   echo "Creating Astra tables..."
   curl -s --request POST \

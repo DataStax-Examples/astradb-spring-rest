@@ -69,7 +69,7 @@ information (we'll need this later!):
 
 3. Set your Astra database details by running the gitpod setup script in the Gitpod terminal at the bottom of the screen:
 ```sh
-./gitpod-setup.shn
+./gitpod-setup.sh
 ```
 ![image](https://user-images.githubusercontent.com/3254549/88752966-f7c7c300-d10f-11ea-9a78-d2a9707192bd.png)
 

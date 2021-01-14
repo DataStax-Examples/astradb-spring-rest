@@ -67,13 +67,15 @@ information (we'll need this later!):
 2. Wait for your Gitpod workspace to start:
 ![image](https://user-images.githubusercontent.com/3254549/88744125-5171c280-d0fb-11ea-9676-de4589e42589.png)
 
-3. Set your Astra database details in the Gitpod terminal at the bottom of the screen:
+3. Set your Astra database details by running the gitpod setup script in the Gitpod terminal at the bottom of the screen:
+```sh
+./gitpod-setup.shn
+```
 ![image](https://user-images.githubusercontent.com/3254549/88752966-f7c7c300-d10f-11ea-9a78-d2a9707192bd.png)
 
-4. Click the 'Open browser' button in the bottom right of the screen:
-![image](https://user-images.githubusercontent.com/3254549/88753046-23e34400-d110-11ea-80d9-62a6ba437183.png)
-
-5. View your application:
-![image](https://user-images.githubusercontent.com/3254549/88753166-6ad13980-d110-11ea-84c4-87932a933c6b.png)
+4. Run the app and view the output in the terminal:
+```sh
+./gradlew bootRun 
+```
 
 <!--- ENDEXCLUDE --->

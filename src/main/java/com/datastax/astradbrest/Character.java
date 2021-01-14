@@ -5,29 +5,40 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Character {
 
-  private String type;
-  private Value value;
+  private Long id;
+  private String name;
+  private Boolean royal;
 
   public Character() {}
 
-  public String getType() {
-    return type;
+  public Long getId() {
+    return this.id;
   }
 
-  public void setType(String type) {
-    this.type = type;
+  public String getName() {
+    return this.name;
   }
 
-  public Value getValue() {
-    return value;
+  public Boolean getRoyal() {
+    return this.royal;
   }
 
-  public void setValue(Value value) {
-    this.value = value;
+  public void setId(Long id) {
+    this.id = id;
+  }
+
+  public void setName(String name) {
+    this.name = name;
+  }
+
+  public void setRoyal(Boolean royal) {
+    this.royal = royal;
   }
 
   @Override
   public String toString() {
-    return "Character{" + "type='" + type + '\'' + ", value=" + value + '}';
+    return (
+      "Character{" + "id=" + id + ", name=" + name + ", royal=" + royal + "}"
+    );
   }
 }

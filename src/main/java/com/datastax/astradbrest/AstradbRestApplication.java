@@ -42,19 +42,19 @@ public class AstradbRestApplication {
     HttpEntity<String> httpEntity = new HttpEntity<String>(headers);
 
     return args -> {
-      ResponseEntity<Character> character = restTemplate.exchange(
+      ResponseEntity<Characters> characters = restTemplate.exchange(
         "https://" +
         env.getProperty("ASTRA_DB_ID") +
         "-" +
         env.getProperty("ASTRA_DB_REGION") +
         ".apps.astra.datastax.com/api/rest/v2/keyspaces/" +
         env.getProperty("ASTRA_DB_KEYSPACE") +
-        "/spring_rest_characters/name",
+        "/spring_rest_characters?where={}",
         HttpMethod.GET,
         httpEntity,
-        Character.class
+        Characters.class
       );
-      log.info(character.toString());
+      log.info(characters.toString());
     };
   }
 }

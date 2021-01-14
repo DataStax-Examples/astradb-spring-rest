@@ -52,19 +52,19 @@ function setupTable() {
     --data '{"ifNotExists":true,"columnDefinitions":[{"static":false,"name":"name","typeDefinition":"text"},{"static":false,"name":"id","typeDefinition":"int"},{"static":false,"name":"actor_name","typeDefinition":"text"},{"static":false,"name":"house_name","typeDefinition":"text"},{"static":false,"name":"royal","typeDefinition":"boolean"}],"primaryKey":{"partitionKey":["name"]},"tableOptions":{"defaultTimeToLive":0},"name":"spring_rest_characters"}'
 
   curl -s --request POST \
-    --url "https://${ASTRA_DB_ID}-${ASTRA_DB_REGION}.apps.astra.datastax.com/api/rest/v1/keyspaces/${ASTRA_DB_KEYSPACE}/tables/gatsby_characters/rows" \
+    --url "https://${ASTRA_DB_ID}-${ASTRA_DB_REGION}.apps.astra.datastax.com/api/rest/v1/keyspaces/${ASTRA_DB_KEYSPACE}/tables/spring_rest_characters/rows" \
     --header 'content-type: application/json' \
     --header "x-cassandra-token: ${AUTH_TOKEN}" \
     --data '{"columns":[{"name":"id","value":1},{"name":"name","value":"Jon Snow"},{"name":"actor_name","value":"Kit Harington"},{"name":"house_name","value":"Stark"},{"name":"royal","value":true}]}'
 
     curl -s --request POST \
-    --url "https://${ASTRA_DB_ID}-${ASTRA_DB_REGION}.apps.astra.datastax.com/api/rest/v1/keyspaces/${ASTRA_DB_KEYSPACE}/tables/gatsby_characters/rows" \
+    --url "https://${ASTRA_DB_ID}-${ASTRA_DB_REGION}.apps.astra.datastax.com/api/rest/v1/keyspaces/${ASTRA_DB_KEYSPACE}/tables/spring_rest_characters/rows" \
     --header 'content-type: application/json' \
     --header "x-cassandra-token: ${AUTH_TOKEN}" \
     --data '{"columns":[{"name":"id","value":2},{"name":"name","value":"Daenerys Targaryen"},{"name":"actor_name","value":"Emilia Clark"},{"name":"house_name","value":"Targaryen"},{"name":"royal","value":true}]}'
 
     curl -s --request POST \
-    --url "https://${ASTRA_DB_ID}-${ASTRA_DB_REGION}.apps.astra.datastax.com/api/rest/v1/keyspaces/${ASTRA_DB_KEYSPACE}/tables/gatsby_characters/rows" \
+    --url "https://${ASTRA_DB_ID}-${ASTRA_DB_REGION}.apps.astra.datastax.com/api/rest/v1/keyspaces/${ASTRA_DB_KEYSPACE}/tables/spring_rest_characters/rows" \
     --header 'content-type: application/json' \
     --header "x-cassandra-token: ${AUTH_TOKEN}" \
     --data '{"columns":[{"name":"id","value":3},{"name":"name","value":"Tyrion Lannister"},{"name":"actor_name","value":"Peter Dinklage"},{"name":"house_name","value":"Lannister"},{"name":"royal","value":false}]}'

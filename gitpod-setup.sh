@@ -46,6 +46,8 @@ function setupTable() {
   export AUTH_TOKEN="${AUTH_TOKEN}"
   gp env AUTH_TOKEN="${AUTH_TOKEN}" &>/dev/null
 
+  eval $(gp env -e)
+
   # Create tables
   echo "Creating Astra tables..."
   curl -s --request POST \
